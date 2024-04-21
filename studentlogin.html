@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .info {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #afadad;
+            border-radius: 8px;
+        }
+        .info h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .streaks,
+        .schedule,
+        .homework,
+        .pending-tasks {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #afadad;
+            border-radius: 8px;
+        }
+        .streaks h3,
+        .schedule h3,
+        .homework h3,
+        .pending-tasks h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .streaks p,
+        .schedule p,
+        .homework p,
+        .pending-tasks p {
+            margin: 5px 0;
+            color: #555;
+            background-color: #afadad;
+        }
+
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .schedule th,
+        .schedule td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            color: #555;
+        }
+        .schedule th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .schedule td:first-child {
+            min-width: 150px;
+        }
+        .homework p,
+        .pending-tasks p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .homework p:first-child,
+        .pending-tasks p:first-child {
+            margin-top: 0;
+        }
+        .homework p:last-child,
+        .pending-tasks p:last-child {
+            margin-bottom: 0;
+        }
+        .homework p:hover,
+        .pending-tasks p:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Dashboard</h2>
+        
+        <!-- Student Information -->
+        <div class="info">
+            <h3>Student Information</h3>
+            <p>Name: Prateek Yadav</p>
+            <p>Class: 10th </p>
+            <p>Roll Number: 230458</p>
+        </div>
+
+        <!-- Study Streaks -->
+        <div class="streaks">
+            <h3>Study Streaks</h3>
+            <p>Current Streak: 5 days</p>
+            <p>Longest Streak: 10 days</p>
+        </div>
+
+        <!-- Daily Class Schedule -->
+        <div class="schedule">
+            <h3>Daily Class Schedule</h3>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Subject</th>
+                </tr>
+                <tr>
+                    <td>09:00 AM - 10:00 AM</td>
+                    <td>Mathematics</td>
+                </tr>
+                <tr>
+                    <td>10:30 AM - 11:30 AM</td>
+                    <td>Science</td>
+                </tr>
+                <!-- Add more rows for additional classes -->
+            </table>
+        </div>
+
+        <!-- Homework Division -->
+        <div class="homework">
+            <h3>Homework Division</h3>
+            <p>Mathematics: Complete Exercise 1, 2, 3</p>
+            <p>Science: Read Chapter 5 and complete questions</p>
+            <!-- Add more homework tasks as needed -->
+        </div>
+
+        <!-- Pending Tasks -->
+        <div class="pending-tasks">
+            <h3>Pending Tasks</h3>
+            <p>Complete Math assignment by tomorrow</p>
+            <p>Submit Science project proposal by end of the week</p>
+            <!-- Add more pending tasks as needed -->
+        </div>
+    </div>
+</body>
+</html>

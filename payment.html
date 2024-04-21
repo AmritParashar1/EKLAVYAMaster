@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="container">
+        <h1>Payment Form</h1>
+        <hr>
+        <h2>Contact Informtion</h2>
+        <p>Name:*<input required name="name" type="text" placeholder="Prateek Yadav"></p>
+        <p>
+            <fieldset>
+                <legend>Gender</legend>
+                Male<input type="radio" name="gender"><!--name of both male and female should be equal so that 
+                    multiselect can not work-->
+                Female<input type="radio" name="gender">
+            </fieldset>
+            
+        </p>
+        <p>
+            Address:<textarea name="address" id="address" col="100" row="10"></textarea>
+            <!--here we used text area not input because address ma be of multiple line -->
+        </p>
+        <p>
+            Email:<input type="email" name="email" id="email" placeholder="yadav@gmail.com">
+        </p>
+        <p>
+            Pincode:
+            <input type="number">        
+        </p>
+        <p>
+                Contact No.:<input type="number" placeholder="10 Digit Mob.no.">
+        </p>
+        <h2 >Payment Information</h2>
+        <p>
+                Card type:
+                <select name="card" id="card" >
+                    <option value="">-Select a card type-</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="Credit Card">Credit Card</option>
+                    
+                </select>
+        </p>
+        <p>
+                Card No.:*<input type="number" required placeholder="1111-2222-3333-4444">
+        </p>
+        <p>
+                CVV*<input type="password" required>
+        </p>
+        <p>
+                Exp. Date*
+                <input type="date" name="exp. date" id="exp. date" required>
+        </p>
+            <button>
+                PAY
+            </button>
+
+    </form>
+
+    
+    
+</body>
+</html>
